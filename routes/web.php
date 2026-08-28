@@ -7,5 +7,13 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return "Toko Makmur JAYA JAYA JAYA";
+});
+
+Route::get('/products', function () {
+    return "Daftar produk";
+});
+
+Route::post('/products', function () {
+    return 'Produk berhasil ditambahkan';
 });
