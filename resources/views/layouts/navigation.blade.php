@@ -23,12 +23,12 @@
                     </a>
                 @endif
 
-                @if (auth()->user()->role === "kasir")
+                {{-- @if (auth()->user()->role === "kasir")
                     <a href="{{ route('pos.history') }}"
                         class="{{ request()->routeIs('pos.history') ? 'text-indigo-600' : 'text-gray-500' }}">
                         Riwayat Transaksi Saya
                     </a>
-                @endif
+                @endif --}}
  
                 <a href="{{ route('pos.index') }}"
                     class="{{ request()->routeIs('pos.index') ? 'text-indigo-600' : 'text-gray-500' }}">
